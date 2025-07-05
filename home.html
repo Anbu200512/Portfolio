@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anbumani V | Portfolio</title>
+    <link rel="stylesheet" href="home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header / Navbar -->
+<header>
+  <nav>
+    <h1>Portfolio</h1>
+    <div class="hamburger" id="hamburger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <ul id="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+      <li><a href="#internship">Internship</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+    
+
+    <!-- Hero Section -->
+<section id="home" class="hero-section">
+  <div class="hero-content">
+    <div class="hero-text">
+      <p>Hi, I'm</p>
+      <h1>Anbumani V 👋</h1>
+      <h2><span id="typed-text"></span><span class="cursor">|</span></h2>
+      <p>I'm passionate about turning real-world problems into elegant web solutions.</p>
+      <div class="buttons">
+        <a href="pdf/Anbumani_resume .pdf" download class="btn"><i class="fas fa-download"></i> Download Resume</a>
+        <a href="#contact" class="btn secondary">Let's Connect</a>
+      </div>
+      <div class="social-icons">
+        <a href="https://github.com/Anbu200512" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/anbumani-v" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="tel:+6374114513"><i class="fas fa-phone-alt"></i></a>
+        <a href="https://wa.me/6374114513"><i class="fab fa-whatsapp"></i></a>
+        <a href="mailto:anbuv0012@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="images/anbu photo.png" alt="Anbumani V">
+    </div>
+  </div>
+</section>
+
+
+    <!-- About Section -->
+<section id="about" class="about-me-section">
+    <h2>About <span class="highlight">Me</span></h2>
+    <div class="about-me-content">
+        <div class="about-box">
+            <h3>Hi! I'm Anbumani V</h3>
+            <p>
+                I’m a web developer focused on front-end design and currently expanding into full-stack development.
+                I recently completed a web development internship at <strong>Zidio Development Company</strong>,
+                where I built a task management system using the <strong>MERN stack</strong>.
+            </p>
+            <p>
+                <strong>Innovation, creativity, and a hunger to learn</strong> are the pillars of my work.
+                I believe in building projects that not only solve real-world problems but also inspire and leave a lasting impact.
+            </p>
+            <p>
+                I’m currently pursuing my <strong>Bachelor’s degree in Electronics and Communication Engineering</strong>
+                at <strong>Hindusthan College of Engineering and Technology</strong>, Coimbatore.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+<!-- Internship Section -->
+<section id="internship" class="internship-section">
+    <h2>My <span class="highlight">Internship</span></h2>
+    <div class="internship-content">
+        <div class="internship-box">
+            <h3>Zidio Development Company</h3>
+            <p><strong>Position:</strong> Web Development Intern</p>
+            <p><strong>Duration:</strong> Jan 2025 – Mar 2025</p>
+            <p>
+                Worked on a full-stack <strong>task management system</strong> using the <strong>MERN stack</strong>.
+                Gained hands-on experience in frontend and backend development, database management, and REST API integration.
+                Contributed to real-time collaboration using <strong>Git & GitHub</strong>.
+            </p>
+            <button class="btn view-btn" onclick="openCertificate()">View Certificate</button>
+        </div>
+    </div>
+</section>
+
+<!-- Certificate Modal -->
+<div id="certificateModal" class="certificate-modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeCertificate()">&times;</span>
+        <img src="images/zidio_internship.JPG" alt="Internship Certificate">
+    </div>
+</div>
+
+
+
+    
+
+    <!-- Skills Section -->
+<section id="skills" class="skills-section">
+    <h2>Technical <span class="highlight">Skills</span></h2>
+    <div class="skills-grid">
+         <div class="skill-box"><i class="fab fa-java"></i><p>Java</p></div>
+        <div class="skill-box"><i class="fab fa-python"></i><p>Python</p></div>
+        <div class="skill-box"><i class="fas fa-database"></i><p>RDBMS</p></div>
+        <div class="skill-box"><i class="fas fa-lightbulb"></i><p>Design Thinking</p></div>
+        <div class="skill-box"><i class="fab fa-angular"></i><p>AngularJS</p></div>
+        <div class="skill-box"><i class="fas fa-layer-group"></i><p>MERN Stack</p></div>
+        <div class="skill-box"><i class="fas fa-code-branch"></i><p>Full Stack</p></div>
+        <div class="skill-box"><i class="fas fa-paint-brush"></i><p>UI/UX Design</p></div>
+        <div class="skill-box"><i class="fab fa-git-alt"></i><p>Git & GitHub</p></div>
+        <div class="skill-box"><i class="fas fa-code"></i><p>VS Code</p></div>
+    </div>
+</section>
+
+    
+    
+    <!-- Projects Section -->
+<section id="projects" class="projects-section">
+    <h2>My <span class="highlight">Projects</span></h2>
+
+    <!-- Slider container with fixed‑end arrows -->
+    <div class="projects-slider-container">
+        <!-- Left arrow -->
+        <button class="slider-btn left" onclick="scrollProjects('left')">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+
+        <!-- Horizontally scrollable project cards -->
+        <div class="projects-scroll" id="projectsScroll">
+            <!-- ───── Project 1 ───── -->
+            <div class="project-box">
+                <img src="images/car rental web.jpg" alt="RentiFy – Car Rental Website">
+                <div class="project-buttons">
+                    <a href="https://rentify-carrentalservice.netlify.app" target="_blank" class="btn">View Project</a>
+                    <button class="btn secondary" onclick="openProjectDescription('rentify')">Description</button>
+                </div>
+            </div>
+
+            <!-- ───── Project 2 ───── -->
+            <div class="project-box">
+                <img src="images/task manage app.jpg" alt="Task Manager – College Edition">
+                <div class="project-buttons">
+                    <a href="https://taskmanagerforstudent.netlify.app" target="_blank" class="btn">View Project</a>
+                    <button class="btn secondary" onclick="openProjectDescription('task')">Description</button>
+                </div>
+            </div>
+
+            <!-- Add more <div class="project-box"> … </div> blocks here as needed -->
+        </div>
+
+        <!-- Right arrow -->
+        <button class="slider-btn right" onclick="scrollProjects('right')">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+    </div>
+</section>
+
+<!-- Project Description Modal -->
+<div id="projectModal" class="project-modal">
+    <span class="close-modal" onclick="closeProjectModal()">&times;</span>
+    <div id="projectModalContent" class="modal-content-text"></div>
+</div>
+
+    
+    
+    
+    
+
+    <!-- Certificates Section -->
+<section id="certificates" class="certificates-section">
+    <h2>My <span class="highlight">Certificates</span></h2>
+    <div class="certificates-slider-container">
+        <button class="slider-btn left" onclick="scrollCertificates('left')">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+
+        <div class="certificates-scroll" id="certificatesScroll">
+            <div class="certificate-box"><img src="images/python.JPG" alt="Python"></div>
+            <div class="certificate-box"><img src="images/java.JPG" alt="Java"></div>
+            <div class="certificate-box"><img src="images/rdms.JPG" alt="RDBMS"></div>
+            <div class="certificate-box"><img src="images/zidio_Training.JPG" alt="Zidio_Training"></div>
+            
+        </div>
+
+        <button class="slider-btn right" onclick="scrollCertificates('right')">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+    </div>
+</section>
+
+
+   <!-- Contact Section -->
+<section id="contact" class="contact-section">
+  <h2>Contact <span class="highlight">Me</span></h2>
+  <p>I'd love to hear from you! Whether it's about a project or just to say hello, feel free to reach out.</p>
+  <form id="contactForm">
+    <div class="form-group">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+    </div>
+    <div class="form-group">
+      <label for="subject">Subject</label>
+      <input type="text" id="subject" name="subject" placeholder="Subject" required>
+    </div>
+    <div class="form-group">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+    </div>
+    <div class="form-group">
+      <button type="submit" class="submit-button">Send Message</button>
+    </div>
+    <p id="formStatus" class="form-status"></p>
+  </form>
+</section>
+   <!-- Footer -->
+<footer>
+  <div class="footer-content">
+    <p>© 2024 Anbumani V. All Rights Reserved.</p>
+    <div class="social-icons">
+      <a href="https://github.com/Anbu200512" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/anbumani-v" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="tel:+6374114513"><i class="fas fa-phone-alt"></i></a>
+      <a href="https://wa.me/6374114513"><i class="fab fa-whatsapp"></i></a>
+      <a href="mailto:anbuv0012@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+  </div>
+</footer>
+<script src="home.js"></script>
+</body>
+</html>
